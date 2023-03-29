@@ -217,5 +217,20 @@
     <p>copyright 2023 <a href="#">fanstoudiawara67@gmail.com</a> . Tous droits reservé</p>
 </div>
 
+<script type="text/javascript">    
+    window.addEventListener('scroll', function(){
+         const header =document.querySelector('header');
+         header.classList.toggle("fanta", window.scrollY > 0 );
+     });
+
+     function toggleMenu(){
+         const tmenuToggle = document.querySelector('.menuToggle');
+         const navbar = document.querySelector('.navbar');
+         navbar.classList.toggle('active');
+         menuToggle.classList.toggle('active');
+     }
+
+</script>
+
 </body>
 </html>
