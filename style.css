@@ -1,0 +1,355 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+} 
+
+ /* là commence le header */
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo{
+    color:seagreen;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+.logo span{
+    color:orangered;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+    color: seagreen;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.btn-reserve{
+    padding: 10px 20px;
+    background:white;
+    margin-top: -10px;
+    text-transform:uppercase ;
+}
+.btn-reserve:hover{
+    background:orangered;
+    transition: ease-out;
+}
+header .navbar li a:hover{
+    color: orangered;
+    border-bottom: 2px solid seagreen;
+}
+
+ /* là commence les sections de navbar */
+
+ /* Accueil */
+.accueil{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../RestaurantFanta/images/imag26.jpeg);
+    background-size: cover;
+}
+.accueil .details{
+    max-width: 70%;
+    text-align: center;
+}
+.accueil .details h2{
+    color: white;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+.details p:nth-child(2){
+    color: #ffff;
+    font-size: 1.2em;
+}
+.detailts1{
+    font-size: 1em;
+    color: #fff;
+    background: seagreen;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.detailts2{
+    font-size: 1em;
+    color: #fff;
+    background:orangered;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.detailts1:hover{
+    letter-spacing: 4px;
+}
+.detailts2:hover{
+    letter-spacing: 4px;
+}
+section{
+    padding: 90px;
+} 
+ 
+/* A Propos */
+.propos1{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.propos1 .propos2{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+
+}
+.propos1 .propos2 h2{
+    margin-bottom: 20px;
+}
+.titre{
+    color: orangered;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+.titre span{
+    color: seagreen;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+.propos1 .propos2 img{
+    height: 450px;
+    width: 600px;
+    position: relative;
+}
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Menu */
+.menu{
+    margin-top: -100px;
+}
+.menu .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .contenu .menu1{
+    width: 350px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px orangered;
+}
+.menu .contenu .menu1 .menu2{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .contenu .menu1 .menu2 img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.menu .contenu .menu1 .textplat{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+.menu .contenu .menu1 .textplat h3{
+    font-weight: 400;
+}
+.textmenu span{
+    color: seagreen;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+.text{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: orangered;
+}
+
+/* Expert */
+.expert{
+    margin-top:-100px;
+}
+.expert .contenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+.expert .contenu .expert1{
+    width: 250px;
+    margin: 15px;
+}
+.expert .contenu .expert1 .expert2{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.expert .contenu .expert1 .expert2 img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.expert .contenu .expert1 .textchef h3{
+    color: #111;
+    font-weight: 400;
+    text-align: center;
+}
+.textexpert span{
+    color: seagreen;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+.textex{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: orangered;
+}
+
+/* Contact */
+.contact{
+    background-image: url(../RestaurantFanta/images/imag16.jpg);
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0, 0.8);
+    width: 100%;
+    background-position: unset;
+}
+.formcontact{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0,0,0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+}
+.formcontact .env{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.formcontact h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.formcontact .env input,
+.formcontact .env textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.formcontact .env input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: #ffff;
+    background: seagreen;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+.textcontact span{
+    color: seagreen;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+.textcon{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: orangered;
+}
+.textcon p{
+    color: white;
+}
+
+/* Pied de Page */
+.copyright{
+    padding: 20px 40px;
+    border-top: 2px solid rgba(0,0,0, 0.1);
+    background: rgba(228,222,222,);
+    text-align: center;
+}
+.copyright p:nth-child(1){
+    color: #333;
+}
+.copyright a {
+    color: orangered;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
